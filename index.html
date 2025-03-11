@@ -1,169 +1,204 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-	<meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Instagram Photo Feed - Alice</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Instagram Photo Feed - Alice</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 </head>
+
 <body>
-  <nav class="navbar navbar-light navbar-expand-lg bg-light py-2"> 
+  <nav class="navbar navbar-expand-lg navbar-light bg-light py-2">
     <div class="container-fluid">
-      
-      <div class="d-flex w-100 justify-content-between">
+
       <a class="navbar-brand ms-2" href="#"><i class="bi bi-instagram"></i><strong> Instagram</strong></a>
 
-        <button class="navbar-toggler me-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="d-flex ms-auto">
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse justify-content-end me-2" id="navbarSupportedContent">
-          <ul class="navbar-nav me-2 mb-2 mb-lg-0" >
-            <li class="nav-item dropdown"></li>
-              <button type="button" class="btn btn-success btn-end" data-bs-toggle="modal" data-bs-target="#exampleModal" >Create a new post</button>
-              <button class="btn btn-secondary dropdown-toggle ms-1" type="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="bi bi-gear-fill"></i></button>
-              <ul class="dropdown-menu dropdown-menu-end me-2" aria-labelledby="navbarDropdown"> 
-                <li><a class="dropdown-item" href="#">Profile</a></li>
-                <li><a class="dropdown-item" href="#">Accesibility</a></li>
-                <li><a class="dropdown-item" href="#">Privacy and Data</a></li>
-                <li><hr class="dropdown-divider"></li>
-                <li><a class="dropdown-item text-danger" href="#">Log out</a></li>
-              </ul>
-          </ul>
-        </div>
-      </div>  
-    </div>
-  </nav>
-        <div class="container-fluid">
+        <div class="collapse navbar-collapse" id="navbarNav">
 
-            <ul class="nav nav-tabs justify-content-center border border-0" id="myTab" role="tablist"> 
-              <li class="nav-item" role="presentation">
-                <a class="nav-link active border border-0" href="#" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" role="tab" aria-controls="home" aria-selected="true"><i class="bi bi-grid-3x3"></i></a>
+          <button type="button" class="btn btn-success ms-2" data-bs-toggle="modal"
+            data-bs-target="#exampleModal">Create a new post</button>
+
+          <div class="dropdown">
+
+            <button class="btn btn-secondary dropdown-toggle ms-2 mt-1" type="button" data-bs-toggle="dropdown"
+              aria-expanded="false"><i class="bi bi-gear-fill"></i></button>
+            <ul class="dropdown-menu dropdown-menu-end data-bs-popper" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">Profile</a></li>
+              <li><a class="dropdown-item" href="#">Accesibility</a></li>
+              <li><a class="dropdown-item" href="#">Privacy and Data</a></li>
+              <li>
+                <hr class="dropdown-divider">
               </li>
-              <li class="nav-item" role="presentation">
-                <a class="nav-link border border-0" href="#" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" role="tab" aria-controls="profile" aria-selected="false"><i class="bi bi-square-fill"></i></a>
-              </li>
+              <li><a class="dropdown-item text-danger" href="#">Log out</a></li>
             </ul>
-            
-            <div class="tab-content" id="myTabContent">
-              <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
-                <div class="row g-1" id="grid">
-                  <div class="col-md-4 col-sm-12 py-1 px-1">
-                    <img src="https://fastly.picsum.photos/id/40/4106/2806.jpg?hmac=MY3ra98ut044LaWPEKwZowgydHZ_rZZUuOHrc3mL5mI" style="height: 30vw; object-fit: cover;" class="img-fluid w-100" alt="photo1">
-                  </div>
-                  <div class="col-md-4 col-sm-12 py-1 px-1">
-                    <img src="https://picsum.photos/400" style="height: 30vw; object-fit: cover;" class="img-fluid w-100" alt="photo2">
-                  </div>
-                  <div class="col-md-4 col-sm-12 py-1 px-1">
-                    <img src="https://fastly.picsum.photos/id/76/4912/3264.jpg?hmac=VkFcSa2Rbv0R0ndYnz_FAmw02ON1pPVjuF_iVKbiiV8" style="height: 30vw; object-fit: cover;" class="img-fluid w-100" alt="photo3">
-                  </div>
-                </div>
-                <div class="row g-1" id="grid">
-                  <div class="col-md-4 col-sm-12 py-1 px-1">
-                    <img src="https://picsum.photos/400" style="height: 30vw; object-fit: cover;" class="img-fluid w-100" alt="photo4">
-                  </div>
-                  <div class="col-md-4 col-sm-12 py-1 px-1">
-                    <img src="https://fastly.picsum.photos/id/57/2448/3264.jpg?hmac=ewraXYesC6HuSEAJsg3Q80bXd1GyJTxekI05Xt9YjfQ" style="height: 30vw; object-fit: cover;" class="img-fluid w-100" alt="photo5">
-                  </div>
-                  <div class="col-md-4 col-sm-12 py-1 px-1">
-                    <img src="https://picsum.photos/400" style="height: 30vw; object-fit: cover;" class="img-fluid w-100" alt="photo6">
-                  </div>
-                </div>
-                <div class="row g-1" id="grid">
-
-                  <div class="col-md-4 col-sm-12 py-1 px-1">
-                    <img src="https://picsum.photos/400" style="height: 30vw; object-fit: cover;" class="img-fluid w-100" alt="photo7">
-                  </div>
-                  <div class="col-md-4 col-sm-12 py-1 px-1">
-                    <img src="https://picsum.photos/400" style="height: 30vw; object-fit: cover;" class="img-fluid w-100" alt="photo8">
-                  </div>
-                  <div class="col-md-4 col-sm-12 py-1 px-1">
-                    <img src="https://picsum.photos/400" style="height: 30vw; object-fit: cover;" class="img-fluid w-100" alt="photo9">
-                  </div>
-                </div>
-              </div>
-            
-                
-              <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
-                
-                <div class="row my-4">
-                  <div class="col-6 mx-auto border rounded p-0">
-                    <div class="d-flex p-2">
-                          <div class="w-100 fs-4">My crazy cat</div>
-                            <small>08/26</small>
-                          </div>
-                          <img src="https://fastly.picsum.photos/id/40/4106/2806.jpg?hmac=MY3ra98ut044LaWPEKwZowgydHZ_rZZUuOHrc3mL5mI" class="img-fluid" alt="photo">
-                          <div class="p-2">
-                            <strong>204 Likes</strong>
-                            <p>This is an example of a very good photo that you can post on instagram</p>
-                        </div>
-                    </div>
-                  </div>
-                  <div class="row my-4">
-                    <div class="col-6 mx-auto border rounded p-0">
-                      <div class="d-flex p-2">
-                            <div class="w-100 fs-4">Old times</div>
-                              <small>02/07</small>
-                            </div>
-                            <img src="https://fastly.picsum.photos/id/76/4912/3264.jpg?hmac=VkFcSa2Rbv0R0ndYnz_FAmw02ON1pPVjuF_iVKbiiV8" class="img-fluid" alt="photo">
-                            <div class="p-2">
-                              <strong>604 Likes</strong>
-                              <p>This is an example of a very good photo that you can post on instagram</p>
-                          </div>
-                      </div>
-                    </div>
-                    <div class="row my-4">
-                      <div class="col-6 mx-auto border rounded p-0">
-                        <div class="d-flex p-2">
-                              <div class="w-100 fs-4">The greatness of the big cities</div>
-                                <small>09/04</small>
-                              </div>
-                              <img src="https://fastly.picsum.photos/id/57/2448/3264.jpg?hmac=ewraXYesC6HuSEAJsg3Q80bXd1GyJTxekI05Xt9YjfQ" class="img-fluid" alt="photo">
-                              <div class="p-2">
-                                <strong>26895 Likes</strong>
-                                <p>This is an example of a very good photo that you can post on instagram</p>
-                            </div>
-                        </div>
-                      </div>
-                </div>
-              </div>
-            </div>
-            
-
-              
-
-          
-          
-          <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <h5 class="modal-title" id="exampleModalLabel">Create a new post</h5>
-                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                  <form>
-                      <label for="message-text" class="col-form-label" >Caption:</label>
-                      <textarea class="form-control" id="message-text" placeholder="Add the caption of your post here"></textarea>
-                      <div class="row p-2">
-                        <button class="col-1 border rounded p-1 m-1 btn-light">
-                          <i class="bi bi-camera"></i>
-                        </button>
-                        <button class="col-1 border rounded p-1 m-1 btn-light">
-                          <i class="bi bi-geo-alt-fill"></i>
-                        </button>
-                      </div>
-                    </form>
-                  </div>
-                <div class="modal-footer">
-                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                  <button type="button" class="btn btn-primary">Send message</button>
-                </div>
-              </div>
-            </div>
           </div>
         </div>
 
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+      </div>
+
+
+
+
+    </div>
+    </div>
+    </div>
+  </nav>
+  <div class="container-fluid">
+
+    <ul class="nav nav-tabs justify-content-center border border-0" id="myTab" role="tablist">
+      <li class="nav-item" role="presentation">
+        <a class="nav-link active border border-0" href="#" id="home-tab" data-bs-toggle="tab" data-bs-target="#home"
+          role="tab" aria-controls="home" aria-selected="true"><i class="bi bi-grid-3x3"></i></a>
+      </li>
+      <li class="nav-item" role="presentation">
+        <a class="nav-link border border-0" href="#" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile"
+          role="tab" aria-controls="profile" aria-selected="false"><i class="bi bi-square-fill"></i></a>
+      </li>
+    </ul>
+
+    <div class="tab-content" id="myTabContent">
+      <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+        <div class="row g-1" id="grid">
+          <div class="col-md-4 col-sm-12 py-1 px-1">
+            <img src="https://fastly.picsum.photos/id/40/4106/2806.jpg?hmac=MY3ra98ut044LaWPEKwZowgydHZ_rZZUuOHrc3mL5mI"
+              style="height: 30vw; object-fit: cover;" class="img-fluid w-100" alt="photo1">
+          </div>
+          <div class="col-md-4 col-sm-12 py-1 px-1">
+            <img src="https://picsum.photos/400" style="height: 30vw; object-fit: cover;" class="img-fluid w-100"
+              alt="photo2">
+          </div>
+          <div class="col-md-4 col-sm-12 py-1 px-1">
+            <img src="https://fastly.picsum.photos/id/76/4912/3264.jpg?hmac=VkFcSa2Rbv0R0ndYnz_FAmw02ON1pPVjuF_iVKbiiV8"
+              style="height: 30vw; object-fit: cover;" class="img-fluid w-100" alt="photo3">
+          </div>
+        </div>
+        <div class="row g-1" id="grid">
+          <div class="col-md-4 col-sm-12 py-1 px-1">
+            <img src="https://picsum.photos/400" style="height: 30vw; object-fit: cover;" class="img-fluid w-100"
+              alt="photo4">
+          </div>
+          <div class="col-md-4 col-sm-12 py-1 px-1">
+            <img src="https://fastly.picsum.photos/id/57/2448/3264.jpg?hmac=ewraXYesC6HuSEAJsg3Q80bXd1GyJTxekI05Xt9YjfQ"
+              style="height: 30vw; object-fit: cover;" class="img-fluid w-100" alt="photo5">
+          </div>
+          <div class="col-md-4 col-sm-12 py-1 px-1">
+            <img src="https://picsum.photos/400" style="height: 30vw; object-fit: cover;" class="img-fluid w-100"
+              alt="photo6">
+          </div>
+        </div>
+        <div class="row g-1" id="grid">
+
+          <div class="col-md-4 col-sm-12 py-1 px-1">
+            <img src="https://picsum.photos/400" style="height: 30vw; object-fit: cover;" class="img-fluid w-100"
+              alt="photo7">
+          </div>
+          <div class="col-md-4 col-sm-12 py-1 px-1">
+            <img src="https://picsum.photos/400" style="height: 30vw; object-fit: cover;" class="img-fluid w-100"
+              alt="photo8">
+          </div>
+          <div class="col-md-4 col-sm-12 py-1 px-1">
+            <img src="https://picsum.photos/400" style="height: 30vw; object-fit: cover;" class="img-fluid w-100"
+              alt="photo9">
+          </div>
+        </div>
+      </div>
+
+
+      <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+
+        <div class="row my-4">
+          <div class="col-6 mx-auto border rounded p-0">
+            <div class="d-flex p-2">
+              <div class="w-100 fs-4">My crazy cat</div>
+              <small>08/26</small>
+            </div>
+            <img src="https://fastly.picsum.photos/id/40/4106/2806.jpg?hmac=MY3ra98ut044LaWPEKwZowgydHZ_rZZUuOHrc3mL5mI"
+              class="img-fluid" alt="photo">
+            <div class="p-2">
+              <strong>204 Likes</strong>
+              <p>This is an example of a very good photo that you can post on instagram</p>
+            </div>
+          </div>
+        </div>
+        <div class="row my-4">
+          <div class="col-6 mx-auto border rounded p-0">
+            <div class="d-flex p-2">
+              <div class="w-100 fs-4">Old times</div>
+              <small>02/07</small>
+            </div>
+            <img src="https://fastly.picsum.photos/id/76/4912/3264.jpg?hmac=VkFcSa2Rbv0R0ndYnz_FAmw02ON1pPVjuF_iVKbiiV8"
+              class="img-fluid" alt="photo">
+            <div class="p-2">
+              <strong>604 Likes</strong>
+              <p>This is an example of a very good photo that you can post on instagram</p>
+            </div>
+          </div>
+        </div>
+        <div class="row my-4">
+          <div class="col-6 mx-auto border rounded p-0">
+            <div class="d-flex p-2">
+              <div class="w-100 fs-4">The greatness of the big cities</div>
+              <small>09/04</small>
+            </div>
+            <img src="https://fastly.picsum.photos/id/57/2448/3264.jpg?hmac=ewraXYesC6HuSEAJsg3Q80bXd1GyJTxekI05Xt9YjfQ"
+              class="img-fluid" alt="photo">
+            <div class="p-2">
+              <strong>26895 Likes</strong>
+              <p>This is an example of a very good photo that you can post on instagram</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Create a new post</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <label for="message-text" class="col-form-label">Caption:</label>
+            <textarea class="form-control" id="message-text" placeholder="Add the caption of your post here"></textarea>
+            <div class="row p-2">
+              <button class="col-1 border rounded p-1 m-1 btn-light">
+                <i class="bi bi-camera"></i>
+              </button>
+              <button class="col-1 border rounded p-1 m-1 btn-light">
+                <i class="bi bi-geo-alt-fill"></i>
+              </button>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Send message</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
 </body>
+
 </html>
