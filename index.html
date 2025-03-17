@@ -6,50 +6,41 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Instagram Photo Feed - Alice</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-lg navbar-light bg-light py-2">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="container-fluid">
 
-      <a class="navbar-brand ms-2" href="#"><i class="bi bi-instagram"></i><strong> Instagram</strong></a>
-
-      <div class="d-flex ms-auto">
-
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+      <a class="navbar-brand d-flex align-items-center gap-1 ms-2" href="#"><i class="bi bi-instagram"></i><strong>
+          Instagram</strong></a>
+        <button class="navbar-toggler me-4" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
           aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-
-          <button type="button" class="btn btn-success ms-2" data-bs-toggle="modal"
-            data-bs-target="#exampleModal">Create a new post</button>
-
-          <div class="dropdown">
-
-            <button class="btn btn-secondary dropdown-toggle ms-2 mt-1" type="button" data-bs-toggle="dropdown"
-              aria-expanded="false"><i class="bi bi-gear-fill"></i></button>
-            <ul class="dropdown-menu dropdown-menu-end data-bs-popper" aria-labelledby="navbarDropdown">
-              <li><a class="dropdown-item" href="#">Profile</a></li>
-              <li><a class="dropdown-item" href="#">Accesibility</a></li>
-              <li><a class="dropdown-item" href="#">Privacy and Data</a></li>
-              <li>
-                <hr class="dropdown-divider">
-              </li>
-              <li><a class="dropdown-item text-danger" href="#">Log out</a></li>
-            </ul>
-          </div>
+        <div class="collapse navbar-collapse justify-content-end me-3" id="navbarNav">
+          <ul class="navbar-nav align-items-end">
+            <li class="nav-item active"> 
+              <a class="nav-link" href="#">
+                <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                  Create a new post
+                </button>
+              </a> 
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link" href="#" id="navbarDropdownMenuLink" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <span class="btn btn-secondary dropdown-toggle"><i class="bi bi-gear-fill"></i></span>
+              </a>
+              <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownMenuLink">
+                <a class="dropdown-item" href="#">Profile</a>
+                <a class="dropdown-item" href="#">Accesibility</a>
+                <a class="dropdown-item" href="#">Privacy and Data</a>
+              </div>
+            </li>
+          </ul>
         </div>
-
-      </div>
-
-
-
-
-    </div>
-    </div>
     </div>
   </nav>
   <div class="container-fluid">
@@ -196,8 +187,8 @@
   </div>
   </div>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
     crossorigin="anonymous"></script>
 </body>
 
