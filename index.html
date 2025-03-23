@@ -21,25 +21,23 @@
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse justify-content-end me-3" id="navbarNav">
-          <ul class="navbar-nav align-items-end">
-            <li class="nav-item active"> 
-              <a class="nav-link" href="#">
+          <div class="d-flex flex-column flex-lg-row align-items-end gap-2 pt-2">
+           <!--  <li class="nav-item active">--> 
                 <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal">
                   Create a new post
                 </button>
-              </a> 
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link" href="#" id="navbarDropdownMenuLink" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                <span class="btn btn-secondary dropdown-toggle"><i class="bi bi-gear-fill"></i></span>
-              </a>
-              <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownMenuLink">
-                <a class="dropdown-item" href="#">Profile</a>
-                <a class="dropdown-item" href="#">Accesibility</a>
-                <a class="dropdown-item" href="#">Privacy and Data</a>
-              </div>
-            </li>
-          </ul>
+            <!--</li>-->
+            <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="navbarDropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                  <i class="bi bi-gear-fill"></i>
+                </button>
+              <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownMenuLink">
+                <li><a class="dropdown-item" href="#">Profile</a></li>
+                <li><a class="dropdown-item" href="#">Accesibility</a></li>
+                <li><a class="dropdown-item" href="#">Privacy and Data</a></li>
+              </ul>
+            </div>
+          </div>
         </div>
     </div>
   </nav>
